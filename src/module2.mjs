@@ -4,3 +4,6 @@ const c = 'Om'
 const d = 'Aditya'
 
 export default c;
+export {a};
+export {b};
+export {d};
