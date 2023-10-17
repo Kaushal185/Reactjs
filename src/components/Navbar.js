@@ -14,7 +14,7 @@ export default function Navbar(props) {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">about</a>
+          <a className="nav-link" href="/">{props.about}</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,7 +40,11 @@ export default function Navbar(props) {
 </nav>
   )
 }
-// Navbar.propTypes = {
-//   title:propTypes.string,
-//   about:propTypes.string
-// }
+Navbar.propTypes = {
+  title:propTypes.string,
+  about:propTypes.string
+}
+Navbar.defaultProps = {
+  title:'Set title here',
+  about:'Set about here'
+}
